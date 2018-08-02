@@ -14,14 +14,16 @@ Summary: Provides very fast access to images stored in the NIfTI-1 file format <
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/r-rnifti-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/r-rnifti-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/r-rnifti-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/r-rnifti-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/r-rnifti-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/r-rnifti-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-rnifti-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-rnifti-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/r-rnifti-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-rnifti-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-rnifti-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-rnifti-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-rnifti/badges/version.svg)](https://anaconda.org/conda-forge/r-rnifti)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-rnifti/badges/downloads.svg)](https://anaconda.org/conda-forge/r-rnifti)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-r--rnifti-green.svg)](https://anaconda.org/conda-forge/r-rnifti) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/r-rnifti.svg)](https://anaconda.org/conda-forge/r-rnifti) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/r-rnifti.svg)](https://anaconda.org/conda-forge/r-rnifti) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/r-rnifti.svg)](https://anaconda.org/conda-forge/r-rnifti) |
 
 Installing r-rnifti
 ===================

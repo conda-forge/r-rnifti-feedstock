@@ -1,4 +1,4 @@
-{% set version = "0.7.1" %}
+{% set version = "0.9.0" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,11 +12,11 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/RNifti_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/RNifti/RNifti_{{ version }}.tar.gz
-  sha256: dcfc06fc6dfaba5d712a9dc57a492b215e4c0b017f046ce026a8458c8f49597b
+  sha256: 48f6e23baf1f869f02ffec82207262f477b3f4222badf2efc693f3aafc817ecd
 
 build:
   merge_build_host: True  # [win]
-  number: 1001
+  number: 0
   skip: true  # [win32]
 
   rpaths:

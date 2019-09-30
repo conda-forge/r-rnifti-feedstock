@@ -1,4 +1,4 @@
-{% set version = '0.11.0' %}
+{% set version = '0.11.1' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/RNifti_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/RNifti/RNifti_{{ version }}.tar.gz
-  sha256: 8edac2a6710b9449bf01450152d673fbee318d8db29fd99f6729de679473487f
+  sha256: 8f835a15c61bb019cc77addff3d4b684b910dd3c6448ac4e89956b31cb6b8f49
 
 build:
   merge_build_host: True  # [win]
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -58,8 +58,8 @@ extra:
     - conda-forge/r
 
 # Package: RNifti
-# Version: 0.11.0
-# Date: 2019-06-17
+# Version: 0.11.1
+# Date: 2019-08-01
 # Title: Fast R and C++ Access to NIfTI Images
 # Authors@R: c(person("Jon","Clayden",role=c("cre","aut"),email="code@clayden.org"), person("Bob","Cox",role="aut"), person("Mark","Jenkinson",role="aut"), person("Matt","Hall",role="ctb"), person("Rick","Reynolds",role="ctb"), person("Kate","Fissell",role="ctb"), person("Jean-loup","Gailly",role="cph"), person("Mark","Adler",role="cph"))
 # Imports: Rcpp (>= 0.11.0)
@@ -71,10 +71,10 @@ extra:
 # URL: https://github.com/jonclayden/RNifti
 # BugReports: https://github.com/jonclayden/RNifti/issues
 # Encoding: UTF-8
-# RoxygenNote: 6.1.0
+# RoxygenNote: 6.1.1
 # NeedsCompilation: yes
-# Packaged: 2019-06-17 16:12:34 UTC; jon
+# Packaged: 2019-08-01 11:55:51 UTC; jon
 # Author: Jon Clayden [cre, aut], Bob Cox [aut], Mark Jenkinson [aut], Matt Hall [ctb], Rick Reynolds [ctb], Kate Fissell [ctb], Jean-loup Gailly [cph], Mark Adler [cph]
 # Maintainer: Jon Clayden <code@clayden.org>
 # Repository: CRAN
-# Date/Publication: 2019-06-17 17:33:52 UTC
+# Date/Publication: 2019-08-01 13:50:02 UTC

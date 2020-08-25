@@ -45,10 +45,11 @@ test:
 
 about:
   home: https://github.com/jonclayden/RNifti
-  license: GPL-2
+  license: GPL-2.0-only
   summary: Provides very fast read and write access to images stored in the NIfTI-1 and ANALYZE-7.5 formats, with seamless synchronisation between compiled C and interpreted R code. Also provides a C/C++ API that can be used by other packages. Not to be confused with 'RNiftyReg', which performs image registration.
   license_family: GPL2
-  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:

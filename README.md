@@ -5,11 +5,9 @@ Home: https://github.com/jonclayden/RNifti
 
 Package license: GPL-2.0-only
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rnifti-feedstock/blob/master/LICENSE.txt)
 
 Summary: Provides very fast read and write access to images stored in the NIfTI-1 and ANALYZE-7.5 formats, with seamless synchronisation between compiled C and interpreted R code. Also provides a C/C++ API that can be used by other packages. Not to be confused with 'RNiftyReg', which performs image registration.
-
-
 
 Current build status
 ====================

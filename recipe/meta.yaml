@@ -1,4 +1,4 @@
-{% set version = "1.4.3" %}
+{% set version = "1.4.5" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/RNifti_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/RNifti/RNifti_{{ version }}.tar.gz
-  sha256: a0b461f3fe125464b32bae171b28a2ccd37700ec33e4ec7457343df5f33ac2f0
+  sha256: a277a849cdfeba3a104fd4ac2764c655d5cf8a71d8e64fa212d359fe60934628
 
 build:
   merge_build_host: true  # [win]

@@ -3,6 +3,7 @@ About r-rnifti-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rnifti-feedstock/blob/main/LICENSE.txt)
 
+
 About r-rnifti
 --------------
 
@@ -11,6 +12,7 @@ Home: https://github.com/jonclayden/RNifti
 Package license: GPL-2.0-only
 
 Summary: Provides very fast read and write access to images stored in the NIfTI-1 and ANALYZE-7.5 formats, with seamless synchronisation between compiled C and interpreted R code. Also provides a C/C++ API that can be used by other packages. Not to be confused with 'RNiftyReg', which performs image registration.
+
 About r-rnifti
 --------------
 
@@ -153,7 +155,7 @@ available continuous integration services. Thanks to the awesome service provide
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
 [Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
 it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance

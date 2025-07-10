@@ -27,10 +27,10 @@ requirements:
     - {{ posix }}sed  # [win]
     - {{ posix }}coreutils  # [win]
     - {{ posix }}zip  # [win]
-    - zlib  # [win]
   host:
     - r-base
     - r-rcpp >=0.11.0
+    - zlib  # [win]
   run:
     - r-base
     - r-rcpp >=0.11.0

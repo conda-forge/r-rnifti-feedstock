@@ -1,5 +1,4 @@
 {% set version = "1.7.0" %}
-{% set posix = 'm2-' if win else '' %}
 
 package:
   name: r-rnifti
@@ -22,11 +21,11 @@ requirements:
     - {{ compiler('c') }}
     - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
-    - {{ posix }}filesystem        # [win]
-    - {{ posix }}make
-    - {{ posix }}sed               # [win]
-    - {{ posix }}coreutils         # [win]
-    - {{ posix }}zip               # [win]
+    - filesystem  # [win]
+    - make
+    - sed  # [win]
+    - coreutils  # [win]
+    - zip  # [win]
   host:
     - r-base
     - r-rcpp >=0.11.0
@@ -36,7 +35,7 @@ requirements:
 
 test:
   commands:
-    - $R -e "library('RNifti')"           # [not win]
+    - $R -e "library('RNifti')"  # [not win]
     - "\"%R%\" -e \"library('RNifti')\""  # [win]
 
 about:

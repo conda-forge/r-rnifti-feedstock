@@ -1,4 +1,4 @@
-{% set version = "1.8.0" %}
+{% set version = "1.9.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/RNifti_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/RNifti/RNifti_{{ version }}.tar.gz
-  sha256: 322b51ff2f8c93ad726bfc5bbd923fc1ceb1dd027f0cdd042b636a278f781792
+  sha256: 026c62eee4ab1dc3ed00d54f789cec1a5970b2edaea485b9e35e97a59fdd1ce4
 
 build:
   number: 0

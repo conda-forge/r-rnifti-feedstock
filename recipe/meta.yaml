@@ -1,4 +1,4 @@
-{% set version = "1.9.0" %}
+{% set version = "1.10.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,29 +9,38 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/RNifti_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/RNifti/RNifti_{{ version }}.tar.gz
-  sha256: 026c62eee4ab1dc3ed00d54f789cec1a5970b2edaea485b9e35e97a59fdd1ce4
+  sha256: da04f5d8bd9a2146dd84250273da2f2c2204217f5f26c968634ca9c51f2aa7e0
 
 build:
   number: 0
   rpaths:
     - lib/R/lib/
     - lib/
+  missing_dso_whitelist:
+    - '*/R.dll'        # [win]
+    - '*/Rblas.dll'    # [win]
+    - '*/Rlapack.dll'  # [win]
 
 requirements:
   build:
     - cross-r-base {{ r_base }}  # [build_platform != target_platform]
     - r-rcpp                     # [build_platform != target_platform]
-    - {{ compiler('c') }}  # [not win]
-    - {{ stdlib("c") }}  # [not win]
-    - {{ compiler('m2w64_c') }}  # [win]
-    - {{ stdlib("m2w64_c") }}  # [win]
-    - {{ compiler('cxx') }}  # [not win]
-    - {{ compiler('m2w64_cxx') }}  # [win]
-    - {{ posix }}filesystem  # [win]
+    - {{ compiler('c') }}              # [not win]
+    - {{ stdlib("c") }}                # [not win]
+    - {{ compiler('m2w64_c') }}        # [win]
+    - {{ stdlib("m2w64_c") }}          # [win]
+    - {{ compiler('cxx') }}            # [not win]
+    - {{ compiler('m2w64_cxx') }}      # [win]
+    - {{ posix }}filesystem        # [win]
+    - {{ posix }}sed               # [win]
+    - {{ posix }}grep              # [win]
+    - {{ posix }}autoconf
+    - {{ posix }}automake          # [not win]
+    - {{ posix }}automake-wrapper  # [win]
+    - {{ posix }}pkg-config
     - {{ posix }}make
-    - {{ posix }}sed  # [win]
-    - {{ posix }}coreutils  # [win]
-    - {{ posix }}zip  # [win]
+    - {{ posix }}coreutils         # [win]
+    - {{ posix }}zip               # [win]
   host:
     - r-base
     - r-rcpp >=0.11.0
